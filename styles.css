@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #A8DADC, #457B9D); /* Blue Gradient Background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin: 20px 0;
+  }
+  
+  /* Task Input Form */
+  input[type="text"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1D3557;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2575fc;
+  }
+  
+  /* Task List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Task Status (Completed or Pending) */
+  li span {
+    font-weight: bold;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: lightgreen;
+  }
+  
+  .pending {
+    color: lightcoral;
+  }
+  
+  /* Filter Buttons */
+  #filterCompleted, #filterPending, #showAll {
+    background-color: #2575fc;
+  }
+  
+  #filterCompleted:hover, #filterPending:hover, #showAll:hover {
+    background-color: #1D3557;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    input[type="text"], textarea {
+      width: 90%;
+    }
+    
+    button {
+      width: 90%;
+    }
+  }
+  
